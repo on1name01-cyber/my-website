@@ -11,10 +11,11 @@
 
   <!-- Navigation -->
   <nav class="navbar">
-    <div class="logo">DevPortfolio</div>
+    <div class="logo">Mohammed Ismail</div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#business">Our Business</a></li>
+      <li><a href="#affiliates">Top Deals</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#contact">Contact Us</a></li>
       <li><a href="#privacy">Privacy Policy</a></li>
@@ -33,52 +34,33 @@
 
   <!-- Business / Store Section -->
   <section id="business" class="container">
-    <h2>Our Business Storefronts</h2>
     <h1>Nuraya Jewels</h1>
-    <h2>fashion jwellery for Women</h2>
+    <h3>Fashion Jewellery for Women</h3>
     <p class="section-desc">Click below to visit our official product pages on top market platforms:</p>
     <div class="store-links">
-      <a href="https://www.meesho.com/NURAYAJEWELS?ms=2" target="_blank" class="store-card meesho">
+      <a href="https://www.meesho.com/NURAYAJEWELS?ms=2" target="_blank" rel="noopener noreferrer" class="store-card meesho">
         <img src="images/meesho.png" alt="Meesho" class="store-logo" />
         <span>Shop on Meesho</span>
       </a>
-      <a href="https://www.flipkart.com/earrings/nuraya-jewels~brand/pr?sid=mcr,96v,k9d&marketplace=FLIPKART" target="_blank" class="store-card flipkart">
+      <a href="https://www.flipkart.com/earrings/nuraya-jewels~brand/pr?sid=mcr,96v,k9d&marketplace=FLIPKART" target="_blank" rel="noopener noreferrer" class="store-card flipkart">
         <img src="images/flipkart.png" alt="Flipkart" class="store-logo" />
         <span>Shop on Flipkart</span>
       </a>
     </div>
   </section>
 
-  <!-- Product of the Day Section -->
-  <section class="container bg-light">
-    <h2><i class="fas fa-star star-icon"></i> Product of the Day</h2>
-    <div class="product-featured">
-      <img src="https://via.placeholder.com/400x300?text=Product+of+the+Day" alt="Featured Product" id="featuredImg" />
-      <div class="product-info">
-        <span class="badge">Today's Highlight</span>
-        <h3 id="featuredTitle">Wireless Ergonomic Headphones</h3>
-        <p id="featuredDesc">Crystal clear audio with noise cancellation. High performance deal for today only!</p>
-        <a href="#" id="featuredLink" target="_blank" class="btn btn-sm">Buy Now</a>
-      </div>
+  <!-- Product of the Day & Affiliates Section (Auto-populated by script.js) -->
+  <section id="affiliates" class="container bg-light">
+    <div>
+      <h1>Our Affiliates</h1>
     </div>
+
+    <h2><i class="fas fa-star star-icon"></i> Product of the Day</h2>
+    <div class="product-featured" id="featuredProductContainer"></div>
 
     <!-- Past / All Products Section -->
     <h3 class="sub-heading">Previous Featured Products</h3>
-    <div class="product-grid" id="productGrid">
-      <!-- Secondary products get rendered dynamically or listed here -->
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x200?text=Smart+Watch" alt="Smart Watch" />
-        <h4>Smart Fitness Watch</h4>
-        <p>Track your health metrics seamlessly.</p>
-        <a href="#" target="_blank" class="btn-outline">View Deal</a>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x200?text=Mechanical+Keyboard" alt="Keyboard" />
-        <h4>RGB Mechanical Keyboard</h4>
-        <p>Perfect key travel for coding and daily tasks.</p>
-        <a href="#" target="_blank" class="btn-outline">View Deal</a>
-      </div>
-    </div>
+    <div class="product-grid" id="productGrid"></div>
   </section>
 
   <!-- About Section -->
@@ -87,11 +69,11 @@
     <div class="about-content">
       <div class="profile-card">
         <img src="images/profile.jpg" alt="Profile Picture" class="profile-img" />
-        <h3>Your Name</h3>
+        <h3>Mohammed Ismail</h3>
         <p class="role">Web Developer & Content Creator</p>
       </div>
       <div class="about-text">
-        <p>Hi! I am a web developer specializing in custom responsive landing pages and websites for businesses like gyms, cafes, and local shops[cite: 1]. I help brands stand out online and get real results[cite: 1].</p>
+        <p>Hi! I am a web developer specializing in custom responsive landing pages and websites for businesses like gyms, cafes, and local shops. I help brands stand out online and get real results.</p>
       </div>
     </div>
 
@@ -100,17 +82,17 @@
       <div class="portfolio-card">
         <div class="card-tag">Project 1</div>
         <h4>Gym & Fitness Hub</h4>
-        <p>Responsive membership landing page with class schedule and lead forms[cite: 1].</p>
+        <p>Responsive membership landing page with class schedule and lead forms.</p>
       </div>
       <div class="portfolio-card">
         <div class="card-tag">Project 2</div>
         <h4>Artisan Cafe Site</h4>
-        <p>Interactive menu showcase and location guide for local coffee lovers[cite: 1].</p>
+        <p>Interactive menu showcase and location guide for local coffee lovers.</p>
       </div>
       <div class="portfolio-card">
         <div class="card-tag">Project 3</div>
         <h4>Local Business Portal</h4>
-        <p>Clean multi-page layout designed for quick local client contact[cite: 1].</p>
+        <p>Clean multi-page layout designed for quick local client contact.</p>
       </div>
     </div>
   </section>
@@ -121,7 +103,7 @@
     <p class="section-desc">Get in touch directly or send your project requirements below:</p>
 
     <div class="quick-contact">
-      <a href="https://wa.me/1234567890" target="_blank" class="contact-btn whatsapp">
+      <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
         <i class="fab fa-whatsapp"></i> Chat on WhatsApp
       </a>
       <a href="mailto:your-email@gmail.com" class="contact-btn email">
@@ -145,7 +127,7 @@
 
       <div class="form-group">
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890" required />
+        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
       </div>
 
       <div class="form-group">
@@ -168,9 +150,11 @@
   </section>
 
   <footer>
-    <p>&copy; 2026 mohammed ismail. All rights reserved.</p>
+    <p>&copy; 2026 Mohammed Ismail. All rights reserved.</p>
   </footer>
 
+  <!-- Load products first, then render them with script.js -->
+  <script src="products.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
