@@ -68,7 +68,7 @@
     <h2>About Me & Client Projects</h2>
     <div class="about-content">
       <div class="profile-card">
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-img" />
+        <img src="images/profile.jpeg" alt="Profile Picture" class="profile-img" />
         <h3>Mohammed Ismail</h3>
         <p class="role">Web Developer & Content Creator</p>
       </div>
@@ -96,48 +96,50 @@
       </div>
     </div>
   </section>
+<!-- Contact Us Section -->
+<section id="contact" class="container bg-light">
+  <h2>Contact Us</h2>
+  <p class="section-desc">Get in touch directly or send your project requirements below:</p>
 
-  <!-- Contact Us Section -->
-  <section id="contact" class="container bg-light">
-    <h2>Contact Us</h2>
-    <p class="section-desc">Get in touch directly or send your project requirements below:</p>
+  <div class="quick-contact">
+    <a href="https://wa.me/916303726076?text=Hi%20Ismail%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
+      <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+    </a>
+    <a href="mailto:zeronebusinessOnly@gmail.com?subject=Website%20Inquiry" class="contact-btn email">
+      <i class="fas fa-envelope"></i> Send an Email
+    </a>
+  </div>
 
-    <div class="quick-contact">
-      <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
-        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-      </a>
-      <a href="mailto:your-email@gmail.com" class="contact-btn email">
-        <i class="fas fa-envelope"></i> Send an Email
-      </a>
+  <!-- Web3Forms sends every submission directly to zeronebusinessOnly@gmail.com -->
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    <input type="hidden" name="access_key" value="2bc21870-c612-48f6-a817-bc38d9728ef4" />
+    <input type="hidden" name="subject" value="New Website Lead from Portfolio" />
+    <input type="hidden" name="from_name" value="Mohammed Ismail Portfolio" />
+    <input type="checkbox" name="botcheck" style="display: none;" />
+
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required />
     </div>
 
-    <!-- Web3Forms handles submissions directly to your email without a custom backend server -->
-    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
-      
-      <div class="form-group">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="John Doe" required />
-      </div>
+    <div class="form-group">
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country" placeholder="e.g., India, USA" required />
+    </div>
 
-      <div class="form-group">
-        <label for="country">Country</label>
-        <input type="text" id="country" name="country" placeholder="e.g., India, USA" required />
-      </div>
+    <div class="form-group">
+      <label for="phone">Phone Number (WhatsApp)</label>
+      <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+    </div>
 
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
-      </div>
+    <div class="form-group">
+      <label for="description">Website Idea / Requirements</label>
+      <textarea id="description" name="description" rows="5" placeholder="Describe the type of website you want (e.g., Gym, Cafe, E-commerce)..." required></textarea>
+    </div>
 
-      <div class="form-group">
-        <label for="description">Website Idea / Requirements</label>
-        <textarea id="description" name="description" rows="5" placeholder="Describe the type of website you want (e.g., Gym, Cafe, E-commerce)..." required></textarea>
-      </div>
-
-      <button type="submit" class="btn">Submit Request</button>
-    </form>
-  </section>
+    <button type="submit" class="btn">Submit Request</button>
+  </form>
+</section>
 
   <!-- Privacy Policy Section -->
   <section id="privacy" class="container">

@@ -257,7 +257,13 @@ h2 {
 }
 
 /* Product Grid */
-.product-grid, .portfolio-grid {
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 320px));
+  gap: 1.5rem;
+}
+
+.portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
@@ -274,16 +280,12 @@ h2 {
 
 .product-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 220px;
+  object-fit: contain;
+  background: #f8fafc;
   border-radius: 4px;
   margin-bottom: 0.75rem;
-}
-
-.product-card p {
-  color: #475569;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
 /* About Section */
