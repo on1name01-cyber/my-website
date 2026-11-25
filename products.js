@@ -1,5 +1,15 @@
 const affiliateProducts = [
     {
+        title: "OnePlus Nord Buds 4 TWS In Ear Headphones",
+        price: "₹3,299",
+        mrp: "₹3,499",
+        discount: "₹200 OFF",
+        description: "52dB real-time ANC, 12mm titanium-coated drivers, 6-mic AI clear calls, and up to 54 hours total playback. Rated 4.3★ on Myntra.",
+        image: "images/oneplus-nord-buds-4.jpg",
+        link: "https://myntr.it/OU5DCTB",
+        platform: "Myntra"
+      },
+    {
       title: "Daniel Klein Women Black Analogue Watch (DK11421-5)",
       price: "₹1,660",
       mrp: "₹4,150",
