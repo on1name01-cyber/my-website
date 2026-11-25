@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Developer Portfolio & Deals</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">DevPortfolio</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#business">Our Business</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobileMenu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Hero / Home Section -->
+  <section id="home" class="hero">
+    <h1>Custom Web Development & Top Deals</h1>
+    <p>I build high-converting, beautiful websites for local businesses and share top product recommendations daily!</p>
+    <a href="#contact" class="btn">Get Your Website Built</a>
+  </section>
+
+  <!-- Business / Store Section -->
+  <section id="business" class="container">
+    <h2>Our Business Storefronts</h2>
+    <p class="section-desc">Click below to visit our official product pages on top market platforms:</p>
+    <div class="store-links">
+      <a href="https://www.meesho.com" target="_blank" class="store-card meesho">
+        <img src="images/meesho.png" alt="Meesho" class="store-logo" />
+        <span>Shop on Meesho</span>
+      </a>
+      <a href="https://www.flipkart.com" target="_blank" class="store-card flipkart">
+        <img src="images/flipkart.png" alt="Flipkart" class="store-logo" />
+        <span>Shop on Flipkart</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Product of the Day Section -->
+  <section class="container bg-light">
+    <h2><i class="fas fa-star star-icon"></i> Product of the Day</h2>
+    <div class="product-featured">
+      <img src="https://via.placeholder.com/400x300?text=Product+of+the+Day" alt="Featured Product" id="featuredImg" />
+      <div class="product-info">
+        <span class="badge">Today's Highlight</span>
+        <h3 id="featuredTitle">Wireless Ergonomic Headphones</h3>
+        <p id="featuredDesc">Crystal clear audio with noise cancellation. High performance deal for today only!</p>
+        <a href="#" id="featuredLink" target="_blank" class="btn btn-sm">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Past / All Products Section -->
+    <h3 class="sub-heading">Previous Featured Products</h3>
+    <div class="product-grid" id="productGrid">
+      <!-- Secondary products get rendered dynamically or listed here -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Smart+Watch" alt="Smart Watch" />
+        <h4>Smart Fitness Watch</h4>
+        <p>Track your health metrics seamlessly.</p>
+        <a href="#" target="_blank" class="btn-outline">View Deal</a>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Mechanical+Keyboard" alt="Keyboard" />
+        <h4>RGB Mechanical Keyboard</h4>
+        <p>Perfect key travel for coding and daily tasks.</p>
+        <a href="#" target="_blank" class="btn-outline">View Deal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2>About Me & Client Projects</h2>
+    <div class="about-content">
+      <div class="profile-card">
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-img" />
+        <h3>Your Name</h3>
+        <p class="role">Web Developer & Content Creator</p>
+      </div>
+      <div class="about-text">
+        <p>Hi! I am a web developer specializing in custom responsive landing pages and websites for businesses like gyms, cafes, and local shops[cite: 1]. I help brands stand out online and get real results[cite: 1].</p>
+      </div>
+    </div>
+
+    <h3 class="sub-heading">Showcase Projects</h3>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="card-tag">Project 1</div>
+        <h4>Gym & Fitness Hub</h4>
+        <p>Responsive membership landing page with class schedule and lead forms[cite: 1].</p>
+      </div>
+      <div class="portfolio-card">
+        <div class="card-tag">Project 2</div>
+        <h4>Artisan Cafe Site</h4>
+        <p>Interactive menu showcase and location guide for local coffee lovers[cite: 1].</p>
+      </div>
+      <div class="portfolio-card">
+        <div class="card-tag">Project 3</div>
+        <h4>Local Business Portal</h4>
+        <p>Clean multi-page layout designed for quick local client contact[cite: 1].</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="container bg-light">
+    <h2>Contact Us</h2>
+    <p class="section-desc">Get in touch directly or send your project requirements below:</p>
+
+    <div class="quick-contact">
+      <a href="https://wa.me/1234567890" target="_blank" class="contact-btn whatsapp">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+      <a href="mailto:your-email@gmail.com" class="contact-btn email">
+        <i class="fas fa-envelope"></i> Send an Email
+      </a>
+    </div>
+
+    <!-- Web3Forms handles submissions directly to your email without a custom backend server -->
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
+      
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required />
+      </div>
+
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" placeholder="e.g., India, USA" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890" required />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Website Idea / Requirements</label>
+        <textarea id="description" name="description" rows="5" placeholder="Describe the type of website you want (e.g., Gym, Cafe, E-commerce)..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Submit Request</button>
+    </form>
+  </section>
+
+  <!-- Privacy Policy Section -->
+  <section id="privacy" class="container">
+    <h2>Privacy Policy</h2>
+    <div class="privacy-box">
+      <p>Your privacy is important to us. It is our policy to respect your privacy regarding any information we may collect while operating our website.</p>
+      <p>We only ask for personal information (such as name, phone number, and email) when we truly need it to provide a web development service to you. We collect it by fair and lawful means, with your knowledge and consent.</p>
+      <p>We don’t share any personally identifying information publicly or with third parties, except when required to by law.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 mohammed ismail. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
